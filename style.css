@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    height: 70px;
+    background: lightskyblue;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: lightcoral;
+}
+
+main {
+    padding: 20px 0;
+    background: lightcoral;
+    text-align: center;
+}
+
+main::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+section {
+    width: 300px;
+    box-sizing: border-box;
+    background: lightblue;
+    margin: 20px;
+    padding: 20px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+footer {
+    clear: both;
+    height: 100px;
+    background: lightgreen;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.image {
+    height: 200px;
+    margin-bottom: 10px;
+    background-position: center;
+    background-size: cover;
+}
+
+.image1 {
+    background: url(images/s1200.jpg);
+}
+
+.image2 {
+    background: url(images/s1201.jpg);
+}
+
+.image3 {
+    background: url(images/ss123.jpg);
+}
+
+@media (max-width: 990px) {
+    section {
+        width: 60%;
+    }
+}
+
+@media (max-width: 767px) {
+    section {
+        width: 80%;
+    }
+}
+
+@media (max-width: 320px) {
+
+    header {
+        height: 10%;
+        padding: 2%;
+        background: lightcoral;
+    }
+
+
+    main {
+        padding: 1% 0;
+        background: lightblue;
+    }
+
+    section {
+        width: 90%;
+        margin: 1%;
+    }
+
+    .logo {
+        width: 20px;
+        height: 20px;
+        background: lightblue;
+    }
+
+    .image {
+        width: 250px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-bottom: 1%;
+    }
+
+    .image3 {
+        height: 180px;
+    }
+
+}
